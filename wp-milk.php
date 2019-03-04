@@ -22,4 +22,5 @@ if (!defined('WPINC')) {
 }
 
 include_once('inc/os.php');
- 
+
+$os = getOS();
