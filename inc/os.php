@@ -1,5 +1,10 @@
 <?php
 
+// costanti che uso per rilevare il sistema operativo generico
+$UNKNOWN = "UNKNOWN";
+$IOS = "IOS";
+$ANDROID = "ANDROID";
+
 $user_agent = $_SERVER['HTTP_USER_AGENT'];
 
 function getOS()
@@ -7,9 +12,11 @@ function getOS()
 
     global $user_agent;
 
-    $os_platform = "Unknown OS Platform";
+    global $UNKNOWN, $IOS, $ANDROID;
 
-    $os_array = array(
+    $os_platform = $UNKNOWN;
+
+    $os_array_precise = array(
         '/windows nt 10/i' => 'Windows 10',
         '/windows nt 6.3/i' => 'Windows 8.1',
         '/windows nt 6.2/i' => 'Windows 8',
@@ -33,6 +40,13 @@ function getOS()
         '/android/i' => 'Android',
         '/blackberry/i' => 'BlackBerry',
         '/webos/i' => 'Mobile'
+    );
+
+    $os_array = array(
+        '/iphone/i' => $IOS,
+        '/ipod/i' => $IOS,
+        '/ipad/i' => $IOS,
+        '/android/i' => $ANDROID
     );
 
     foreach ($os_array as $regex => $value)

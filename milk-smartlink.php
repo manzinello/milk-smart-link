@@ -30,7 +30,7 @@ add_action('wp', 'milk_redirect');
 
 function milk_redirect()
 {
-    if (get_the_ID() == 5) {
-        redirect('https://www.google.it', 301);
+    if (get_the_ID() == get_option('milk_id')) {
+        redirect(get_option('milk_android'), 301);
     }
 }

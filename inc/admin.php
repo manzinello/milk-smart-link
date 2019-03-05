@@ -4,7 +4,7 @@ add_action('admin_menu', 'milk_settings');
 
 function milk_settings()
 {
-    add_menu_page('Milk settings', 'Milk settings', 'manage_options', 'milk-smartlink', 'milk_settings_page');
+    add_menu_page('Milk settings', 'Milk smart link', 'manage_options', 'milk-smartlink', 'milk_settings_page');
 }
 
 function post_milk_settings()
