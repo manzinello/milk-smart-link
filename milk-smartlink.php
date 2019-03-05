@@ -4,7 +4,7 @@
  *
  * @link              https://github.com/manzinello/milk-smartlink
  * @since             0.1.0
- * @package           milk
+ * @package           milk-smartlink
  *
  * @wordpress-plugin
  * Plugin Name:       Milk smart link
