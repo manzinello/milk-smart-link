@@ -9,5 +9,10 @@ function milk_settings()
 
 function milk_settings_page()
 {
-    echo '<h1>Milk</h1>';
+    ob_start();
+    ?>
+
+<?php
+
+return ob_get_clean();
 }
