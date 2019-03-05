@@ -2,13 +2,13 @@
 /**
  * Milk smart link (redirection) for WordPress
  *
- * @link              https://github.com/manzinello/wp-milk
+ * @link              https://github.com/manzinello/milk-smartlink
  * @since             0.1.0
  * @package           milk
  *
  * @wordpress-plugin
  * Plugin Name:       Milk smart link
- * Plugin URI:        https://github.com/manzinello/wp-milk
+ * Plugin URI:        https://github.com/manzinello/milk-smartlink
  * Description:       Milk smart link (redirection) for WordPress
  * Version:           0.1.0
  * Author:            Matteo Manzinello
@@ -23,6 +23,7 @@ if (!defined('WPINC')) {
 }
 
 include_once('inc/os.php');
+include_once('inc/helper.php');
 include_once('inc/admin.php');
 
 add_action('wp', 'milk_redirect');
