@@ -19,7 +19,7 @@ function milk_settings_page()
         Last name:<br>
         <input type="text" name="lastname" value="Mouse">
         <br><br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Milk!">
     </form>
 
     <?php
