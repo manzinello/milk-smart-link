@@ -1,15 +1,15 @@
 <?php
 /**
- * Milk-smartlink plugin for WordPress
+ * Milk smart link (redirection) for WordPress
  *
  * @link              https://github.com/manzinello/wp-milk
  * @since             0.1.0
  * @package           milk
  *
  * @wordpress-plugin
- * Plugin Name:       Milk
+ * Plugin Name:       Milk smart link
  * Plugin URI:        https://github.com/manzinello/wp-milk
- * Description:       Milk smart link redirection for WordPress
+ * Description:       Milk smart link (redirection) for WordPress
  * Version:           0.1.0
  * Author:            Matteo Manzinello
  * Author URI:        https://matteomanzinello.com
