@@ -9,8 +9,9 @@ function milk_settings()
 
 function milk_settings_page()
 {
-    ob_start();
     ?>
+
+    <h1>Milk settings</h1>
 
     <form action="/action_page.php">
         ID della pagina Milk<br>
@@ -27,5 +28,4 @@ function milk_settings_page()
 
     <?php
 
-    return ob_get_clean();
 }
