@@ -4,7 +4,7 @@ add_action('admin_menu', 'milk_settings');
 
 function milk_settings()
 {
-    add_menu_page('Milk settings', 'Milk smart link', 'manage_options', 'milk-smartlink', 'milk_settings_page', 'http://localhost:8888/wordpress/wp-content/plugins/milk-smartlink/assets/images/milk-icon.png');
+    add_menu_page('Milk settings', 'Milk smart link', 'manage_options', 'milk-smartlink', 'milk_settings_page', 'http://localhost:8888/wordpress/wp-content/plugins/milk-smartlink/assets/milk-icon.png');
 }
 
 function post_milk_settings()
