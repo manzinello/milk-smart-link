@@ -26,12 +26,12 @@ include_once('inc/os.php');
 
 add_action('admin_menu', 'milk_settings');
 
-function milk_settings() {
+function milk_settings()
+{
 	add_menu_page('Milk settings', 'Milk settings', 'manage_options', 'wp-milk', 'milk_settings_page');
 };
 
-function milk_settings_page() {
+function milk_settings_page()
+{
 	echo '<h1>Milk</h1>';
 }
-
-$os = getOS();
