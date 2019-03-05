@@ -35,3 +35,19 @@ function milk_settings_page()
 {
 	echo '<h1>Milk</h1>';
 }
+
+function redirect($location, $status)
+{
+	wp_redirect($location, $status);
+	exit;
+}
+
+add_action('wp', 'milk_redirect');
+
+function milk_redirect()
+{
+	if (get_the_ID() == 5) {
+		echo ('ciao');
+		redirect('https://www.google.it', 301);
+	}
+}
