@@ -7,9 +7,19 @@ function milk_settings()
     add_menu_page('Milk settings', 'Milk settings', 'manage_options', 'wp-milk', 'milk_settings_page');
 }
 
+function post_milk_settings()
+{
+}
+
+
 function milk_settings_page()
 {
+
+    post_milk_settings();
+
     ?>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"/>
 
     <h1>Milk settings</h1>
 
@@ -23,7 +33,7 @@ function milk_settings_page()
         Android<br>
         <input type="text" name="android">
         <br><br>
-        <input type="submit" value="Milk!">
+        <input class="button is-primary" type="submit" value="Milk!">
     </form>
 
     <?php
