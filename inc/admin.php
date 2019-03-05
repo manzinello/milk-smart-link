@@ -19,7 +19,7 @@ function milk_settings_page()
 
     ?>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"/>
+    <link rel="stylesheet" href="<?php echo(WP_PLUGIN_DIR) ?>/wp-milk/assets/css/bulma.min.css"/>
 
     <h1>Milk settings</h1>
 
