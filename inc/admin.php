@@ -45,9 +45,9 @@ function milk_settings_page()
 
             <form method="post" action="">
                 <div class="field">
-                    <label class="label">Id della pagina Milk</label>
+                    <label class="label">Page</label>
                     <div class="control">
-                        <div class="control has-icons-left">
+                        <div class="control">
                             <div class="select">
                                 <select name="id" id="id">
                                     <?php
@@ -63,20 +63,17 @@ function milk_settings_page()
                                     ?>
                                 </select>
                             </div>
-                            <span class="icon is-left">
-                            <i class="fas fa-globe"></i>
-                          </span>
                         </div>
                     </div>
                 </div>
                 <div class="field">
-                    <label class="label">iOS</label>
+                    <label class="label">iOS redirect</label>
                     <div class="control">
                         <input class="input" type="text" name="ios" value="<?php echo(get_option('milk_ios')) ?>">
                     </div>
                 </div>
                 <div class="field">
-                    <label class="label">Android</label>
+                    <label class="label">Android redirect</label>
                     <div class="control">
                         <input class="input" type="text" name="android"
                                value="<?php echo(get_option('milk_android')) ?>">
