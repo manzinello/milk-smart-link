@@ -1,4 +1,4 @@
-![Milk](/assets/milk-icon.png)
+![Milk](/assets/icon-128x128.png)
 
 # 🥛 Milk smart link (redirection) for WordPress
 
