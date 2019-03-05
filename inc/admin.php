@@ -13,11 +13,14 @@ function milk_settings_page()
     ?>
 
     <form action="/action_page.php">
-        First name:<br>
-        <input type="text" name="firstname" value="Mickey">
+        ID della pagina Milk<br>
+        <input type="text" name="id">
         <br>
-        Last name:<br>
-        <input type="text" name="lastname" value="Mouse">
+        iOS<br>
+        <input type="text" name="ios">
+        <br>
+        Android<br>
+        <input type="text" name="android">
         <br><br>
         <input type="submit" value="Milk!">
     </form>
