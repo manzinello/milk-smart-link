@@ -10,13 +10,13 @@ function milk_settings()
 function post_milk_settings()
 {
 
-    $id = $_POST['id'];
-    $ios = $_POST['ios'];
-    $android = $_POST['android'];
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    add_option('milk_id', $id);
-    add_option('milk_ios', $ios);
-    add_option('milk_android', $android);
+        $id = $_POST['id'];
+        $ios = $_POST['ios'];
+        $android = $_POST['android'];
+
+    }
 
 }
 
@@ -40,22 +40,22 @@ function milk_settings_page()
                 <div class="field">
                     <label class="label">Id della pagina Milk</label>
                     <div class="control">
-                        <input class="input" type="text" name="id" value="<?php echo(get_option('milk_id')) ?>">
+                        <input class="input" type="text" name="id">
                     </div>
                 </div>
                 <div class="field">
                     <label class="label">iOS</label>
                     <div class="control">
-                        <input class="input" type="text" name="ios" value="<?php echo(get_option('milk_ios')) ?>">
+                        <input class="input" type="text" name="ios">
                     </div>
                 </div>
                 <div class="field">
                     <label class="label">Android</label>
                     <div class="control">
-                        <input class="input" type="text" name="android" value="<?php echo(get_option('milk_android')) ?>">
+                        <input class="input" type="text" name="android">
                     </div>
                 </div>
-                <a class="button is-primary is-large" type="submit">Milk</a>
+                <button class="button is-primary is-large" type="submit">Milk</button>
             </form>
         </div>
     </section>
