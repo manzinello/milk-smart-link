@@ -19,7 +19,7 @@
 
 // If this file is called directly, abort.
 if (!defined('WPINC')) {
-	die;
+    die;
 }
 
 include_once('inc/os.php');
@@ -29,7 +29,7 @@ add_action('wp', 'milk_redirect');
 
 function milk_redirect()
 {
-	if (get_the_ID() == 5) {
-		redirect('https://www.google.it', 301);
-	}
+    if (get_the_ID() == 5) {
+        redirect('https://www.google.it', 301);
+    }
 }
