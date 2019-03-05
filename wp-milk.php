@@ -23,31 +23,13 @@ if (!defined('WPINC')) {
 }
 
 include_once('inc/os.php');
-
-add_action('admin_menu', 'milk_settings');
-
-function milk_settings()
-{
-	add_menu_page('Milk settings', 'Milk settings', 'manage_options', 'wp-milk', 'milk_settings_page');
-};
-
-function milk_settings_page()
-{
-	echo '<h1>Milk</h1>';
-}
-
-function redirect($location, $status)
-{
-	wp_redirect($location, $status);
-	exit;
-}
+include_once('inc/admin.php');
 
 add_action('wp', 'milk_redirect');
 
 function milk_redirect()
 {
 	if (get_the_ID() == 5) {
-		echo ('ciao');
 		redirect('https://www.google.it', 301);
 	}
 }
