@@ -30,7 +30,26 @@ add_action('wp', 'milk_redirect');
 
 function milk_redirect()
 {
+
+    global $UNKNOWN, $IOS, $ANDROID;
+
     if (get_the_ID() == get_option('milk_id')) {
-        redirect(get_option('milk_android'), 301);
+
+        $os = getOS();
+
+        switch ($os) {
+
+            case $IOS:
+                redirect(get_option('milk_ios'), 301);
+                break;
+            case $ANDROID:
+                redirect(get_option('milk_android'), 301);
+                break;
+            default:
+                break;
+
+        }
+
+
     }
 }
