@@ -32,8 +32,9 @@ function milk_settings_page()
 
     ?>
 
-    <link rel="stylesheet" href="<?php echo(WP_PLUGIN_DIR) ?>/wp-milk/assets/css/bulma.min.css"/>
-    <link rel="stylesheet" href="http://localhost:8888/wordpress/wp-content/plugins/wp-milk/assets/css/bulma.min.css"/>
+    <link rel="stylesheet" href="<?php echo(WP_PLUGIN_DIR) ?>/milk-smartlink/assets/css/bulma.min.css"/>
+    <link rel="stylesheet"
+          href="http://localhost:8888/wordpress/wp-content/plugins/milk-smartlink/assets/css/bulma.min.css"/>
 
     <section class="section">
         <div class="container">
