@@ -30,6 +30,8 @@ function milk_settings_page()
 
     post_milk_settings();
 
+    $pages = get_pages();
+
     ?>
 
     <link rel="stylesheet" href="<?php echo(WP_PLUGIN_DIR) ?>/milk-smartlink/assets/css/bulma.min.css"/>
@@ -45,7 +47,26 @@ function milk_settings_page()
                 <div class="field">
                     <label class="label">Id della pagina Milk</label>
                     <div class="control">
-                        <input class="input" type="text" name="id" value="<?php echo(get_option('milk_id')) ?>">
+                        <div class="control has-icons-left">
+                            <div class="select">
+                                <select name="id" id="id">
+                                    <?php
+
+                                    foreach ($pages as $page) {
+                                        if ($page->ID == get_option('milk_id')) {
+                                            echo('<option selected value="' . $page->ID . '">' . $page->post_title . '</option>');
+                                        } else {
+                                            echo('<option value="' . $page->ID . '">' . $page->post_title . '</option>');
+                                        }
+                                    }
+
+                                    ?>
+                                </select>
+                            </div>
+                            <span class="icon is-left">
+                            <i class="fas fa-globe"></i>
+                          </span>
+                        </div>
                     </div>
                 </div>
                 <div class="field">
