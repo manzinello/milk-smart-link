@@ -5,7 +5,6 @@ add_action('admin_head', 'milk_style');
 
 function milk_style()
 {
-
     echo('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />');
 }
 
