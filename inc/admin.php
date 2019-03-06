@@ -22,15 +22,19 @@ function post_milk_settings()
         $ios = $_POST['ios'];
         $android = $_POST['android'];
 
-        update_option('milk_id', $id);
-        update_option('milk_ios', $ios);
-        update_option('milk_android', $android);
+        if (($ios != "" && filter_var($ios, FILTER_VALIDATE_URL) === FALSE) ||
+            ($android != "" && filter_var($android, FILTER_VALIDATE_URL) === FALSE)) {
 
-        echo('<article class="message is-danger">
-  <div class="message-body">
-Error!
-</div>
-</article>');
+            echo('<article class="message is-danger"><div class="message-body">Error, not a valid url!</div></article>');
+
+        } else {
+
+            update_option('milk_id', $id);
+            update_option('milk_ios', $ios);
+            update_option('milk_android', $android);
+
+        }
+
 
     }
 
