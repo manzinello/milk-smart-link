@@ -22,9 +22,9 @@ function post_milk_settings()
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // ottengo i valori
-        $id = $_POST['id'];
-        $ios = $_POST['ios'];
-        $android = $_POST['android'];
+        $id = esc_html($_POST['id']);
+        $ios = esc_html($_POST['ios']);
+        $android = esc_html($_POST['android']);
 
         // check degli url
         if (($ios != "" && filter_var($ios, FILTER_VALIDATE_URL) === FALSE) ||
