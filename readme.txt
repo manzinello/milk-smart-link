@@ -8,7 +8,7 @@ Stable tag: 0.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Milk: redirection based on the OS (Android/iOS). Perfect for download app pages instead of Play Store / App Store badges!
+Milk: redirection based on the OS (Android/iOS). Perfect to replace Play Store / App Store badges with a single url!
 
 == Description ==
 
@@ -34,3 +34,8 @@ e.g.
 == Screenshots ==
 
 1. Milk settings page
+
+== Changelog ==
+
+= 0.1 =
+First release of Milk smart link, iOS and Android available.
