@@ -13,7 +13,7 @@ function load_milk_style($hook)
 
 function milk_settings()
 {
-    add_menu_page('Milk smart link', 'Milk smart link', 'manage_options', 'milk-smartlink', 'milk_settings_page', MILK_PLUGIN_PATH . 'assets/milk-icon.png');
+    add_menu_page('Milk smart link', 'Milk smart link', 'manage_options', 'milk-smartlink', 'milk_settings_page', site_url() . '/wp-content/plugins/milk-smartlink/assets/milk-icon.png');
 }
 
 function post_milk_settings()
