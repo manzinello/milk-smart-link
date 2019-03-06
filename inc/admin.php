@@ -8,7 +8,7 @@ function load_milk_style($hook)
     if ($hook != 'toplevel_page_milk-smartlink') {
         return;
     }
-    wp_enqueue_style('bulma_css', 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css');
+    wp_enqueue_style('bulma_css', site_url() . '/wp-content/plugins/milk-smartlink/assets/css/bulma.min.css');
 }
 
 function milk_settings()
@@ -22,9 +22,9 @@ function post_milk_settings()
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // ottengo i valori
-        $id = esc_html($_POST['id']);
-        $ios = esc_html($_POST['ios']);
-        $android = esc_html($_POST['android']);
+        $id = sanitize_text_field($_POST['id']);
+        $ios = esc_url($_POST['ios']);
+        $android = esc_url($_POST['android']);
 
         // check degli url
         if ($ios != "" && filter_var($ios, FILTER_VALIDATE_URL) === FALSE) {
