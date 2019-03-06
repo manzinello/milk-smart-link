@@ -1,6 +1,5 @@
 === Milk smart link ===
 Contributors: manzinello
-Donate link: https://matteomanzinello.com
 Tags: android, ios, redirect, 301
 Requires at least: 4.8
 Tested up to: 5.1
@@ -9,7 +8,7 @@ Stable tag: 0.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Milk: redirection depending on the OS (Android/iOS). Perfect for download app pages instead of Play Store / App Store badges!
+Milk: redirection based on the OS (Android/iOS). Perfect for download app pages instead of Play Store / App Store badges!
 
 == Description ==
 
