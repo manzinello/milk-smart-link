@@ -1,6 +1,13 @@
 <?php
 
 add_action('admin_menu', 'milk_settings');
+add_action('admin_head', 'milk_style');
+
+function milk_style()
+{
+
+    echo('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />');
+}
 
 function milk_settings()
 {
@@ -34,14 +41,15 @@ function milk_settings_page()
 
     ?>
 
-    <link rel="stylesheet" href="<?php echo(WP_PLUGIN_DIR) ?>/milk-smartlink/assets/css/bulma.min.css"/>
-    <link rel="stylesheet"
-          href="http://localhost:8888/wordpress/wp-content/plugins/milk-smartlink/assets/css/bulma.min.css"/>
-
     <section class="section">
         <div class="container">
 
-            <h1 class="title">Milk</h1>
+            <p class="title is-1">Milk</p>
+            <p>Milk is very simple to use. Choose a <strong>page</strong> and then add different <strong>url</strong> to
+                redirect to for Android or iOS.<br/>
+                For example, if you want to redirect a user to the correct app store based on his device to download
+                your app add the Play Store url under Android section and the App Store url for iOS.</p>
+            <br/>
 
             <form method="post" action="">
                 <div class="field">
@@ -67,20 +75,22 @@ function milk_settings_page()
                     </div>
                 </div>
                 <div class="field">
-                    <label class="label">iOS redirect</label>
+                    <label class="label">iOS</label>
                     <div class="control">
                         <input class="input" type="text" name="ios" value="<?php echo(get_option('milk_ios')) ?>">
                     </div>
                 </div>
                 <div class="field">
-                    <label class="label">Android redirect</label>
+                    <label class="label">Android</label>
                     <div class="control">
                         <input class="input" type="text" name="android"
                                value="<?php echo(get_option('milk_android')) ?>">
                     </div>
                 </div>
-                <button class="button is-primary is-large" type="submit">Milk</button>
+                <button class="button is-primary" type="submit">Save settings</button>
             </form>
+
+
         </div>
     </section>
 
