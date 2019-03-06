@@ -60,6 +60,8 @@ function milk_settings_page()
                 For example, if you want to redirect a user to the correct app store based on his device to download
                 your app add the Play Store url under Android section and the App Store url for iOS.</p>
             <br/>
+            <p>a plugin by <a target="_blank" href="https://matteomanzinello.com">matteo manzinello</a></p>
+            <br/>
 
             <?php post_milk_settings(); ?>
 
@@ -99,10 +101,9 @@ function milk_settings_page()
                                value="<?php echo(get_option('milk_android')) ?>">
                     </div>
                 </div>
+                <br/>
                 <button class="button is-primary" type="submit">Save settings</button>
             </form>
-
-
         </div>
     </section>
 
