@@ -1,6 +1,6 @@
 <?php
 /**
- * Milk smart link (redirection) for WordPress
+ * Milk smart link for WordPress
  *
  * @link              https://github.com/manzinello/milk-smartlink
  * @since             0.1.0
