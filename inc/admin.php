@@ -27,10 +27,13 @@ function post_milk_settings()
         $android = esc_html($_POST['android']);
 
         // check degli url
-        if (($ios != "" && filter_var($ios, FILTER_VALIDATE_URL) === FALSE) ||
-            ($android != "" && filter_var($android, FILTER_VALIDATE_URL) === FALSE)) {
+        if ($ios != "" && filter_var($ios, FILTER_VALIDATE_URL) === FALSE) {
 
-            echo('<article class="message is-danger"><div class="message-body">Error, not a valid url!</div></article>');
+            echo('<article class="message is-danger"><div class="message-body">Error, iOS is not a valid url!</div></article>');
+
+        } else if ($android != "" && filter_var($android, FILTER_VALIDATE_URL) === FALSE) {
+
+            echo('<article class="message is-danger"><div class="message-body">Error, Android is not a valid url!</div></article>');
 
         } else {
 
