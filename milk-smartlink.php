@@ -17,16 +17,14 @@
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-define('MILK_PLUGIN_PATH', plugin_dir_path(__FILE__));
-
 // If this file is called directly, abort.
 if (!defined('WPINC')) {
     die;
 }
 
-include_once(MILK_PLUGIN_PATH . 'inc/os.php');
-include_once(MILK_PLUGIN_PATH . 'inc/helper.php');
-include_once(MILK_PLUGIN_PATH . 'inc/admin.php');
+include_once('inc/os.php');
+include_once('inc/helper.php');
+include_once('inc/admin.php');
 
 add_action('wp', 'milk_redirect');
 
