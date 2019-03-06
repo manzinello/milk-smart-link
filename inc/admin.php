@@ -26,6 +26,12 @@ function post_milk_settings()
         update_option('milk_ios', $ios);
         update_option('milk_android', $android);
 
+        echo('<article class="message is-danger">
+  <div class="message-body">
+Error!
+</div>
+</article>');
+
     }
 
 }
@@ -33,8 +39,6 @@ function post_milk_settings()
 
 function milk_settings_page()
 {
-
-    post_milk_settings();
 
     $pages = get_pages();
 
@@ -49,6 +53,8 @@ function milk_settings_page()
                 For example, if you want to redirect a user to the correct app store based on his device to download
                 your app add the Play Store url under Android section and the App Store url for iOS.</p>
             <br/>
+
+            <?php post_milk_settings(); ?>
 
             <form method="post" action="">
                 <div class="field">
