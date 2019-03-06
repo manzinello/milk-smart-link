@@ -18,10 +18,12 @@ function post_milk_settings()
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
+        // ottengo i valori
         $id = $_POST['id'];
         $ios = $_POST['ios'];
         $android = $_POST['android'];
 
+        // check degli url
         if (($ios != "" && filter_var($ios, FILTER_VALIDATE_URL) === FALSE) ||
             ($android != "" && filter_var($android, FILTER_VALIDATE_URL) === FALSE)) {
 
@@ -29,12 +31,12 @@ function post_milk_settings()
 
         } else {
 
+            // aggiornamento delle option
             update_option('milk_id', $id);
             update_option('milk_ios', $ios);
             update_option('milk_android', $android);
 
         }
-
 
     }
 
@@ -44,6 +46,7 @@ function post_milk_settings()
 function milk_settings_page()
 {
 
+    // tutte le pagine
     $pages = get_pages();
 
     ?>
