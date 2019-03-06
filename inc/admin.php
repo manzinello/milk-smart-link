@@ -1,12 +1,16 @@
 <?php
 
 add_action('admin_menu', 'milk_settings');
-add_action('admin_head', 'milk_style');
 
-function milk_style()
+function load_milk_style($hook)
 {
-    echo('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />');
+    if ($hook != 'toplevel_page_milk-smartlink') {
+        return;
+    }
+    wp_enqueue_style('bulma_css', 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css');
 }
+
+add_action('admin_enqueue_scripts', 'load_milk_style');
 
 function milk_settings()
 {
