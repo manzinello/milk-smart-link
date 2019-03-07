@@ -2,7 +2,7 @@
 
 # 🥛 Milk smart link for WordPress
 
-Milk smart link (redirection) for WordPress
+Milk smart link for WordPress
 
 read also the [/readme.txt](/readme.txt)
 

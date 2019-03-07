@@ -22,6 +22,8 @@ With Milk you can create a page that will redirect to a url if the user is visit
 
 At the moment the supported platforms are iOS and Android, soon will arrive Mac OS, Windows, Linux...
 
+This plugin is WIP!
+
 == Installation ==
 
 This section describes how to install the plugin and get it working.
@@ -38,4 +40,4 @@ e.g.
 == Changelog ==
 
 = 0.1 =
-First release of Milk smart link, iOS and Android available.
+Very first release of Milk smart link, iOS and Android available. WIP!
