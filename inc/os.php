@@ -7,7 +7,7 @@ $ANDROID = "ANDROID";
 
 $user_agent = $_SERVER['HTTP_USER_AGENT'];
 
-function getOS()
+function milk_getOS()
 {
 
     global $user_agent;
@@ -56,7 +56,7 @@ function getOS()
     return $os_platform;
 }
 
-function getBrowser()
+function milk_getBrowser()
 {
 
     global $user_agent;

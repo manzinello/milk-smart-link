@@ -35,15 +35,15 @@ function milk_redirect()
 
     if (get_the_ID() == get_option('milk_id')) {
 
-        $os = getOS();
+        $os = milk_getOS();
 
         switch ($os) {
 
             case $IOS:
-                redirect(get_option('milk_ios'), 301);
+                _milk_redirect(get_option('milk_ios'), 301);
                 break;
             case $ANDROID:
-                redirect(get_option('milk_android'), 301);
+                _milk_redirect(get_option('milk_android'), 301);
                 break;
             default:
                 break;
