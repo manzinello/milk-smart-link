@@ -8,7 +8,7 @@ function load_milk_style($hook)
     if ($hook != 'toplevel_page_milk-smartlink') {
         return;
     }
-    wp_enqueue_style('bulma_css', site_url() . '/wp-content/plugins/milk-smartlink/assets/css/bulma.min.css');
+    wp_enqueue_style('bulma_css', site_url() . '/wp-content/plugins/milk-smartlink/css/bulma.min.css');
 }
 
 function milk_settings()
