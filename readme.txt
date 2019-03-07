@@ -8,11 +8,11 @@ Stable tag: 0.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Milk: redirection based on the OS (Android/iOS). Perfect to replace Play Store / App Store badges with a single url!
+Milk: redirection based on the OS (Android/iOS). Perfect to replace Google Play / App Store badges with a single url!
 
 == Description ==
 
-Why do I have to add a "Download on Play Store" badge if a user is running iOS?
+Why do I have to add a "Get it on Google Play" badge if a user is running iOS?
 
 Milk smart link is useful to redirect a user to a specific page depending on the OS he is seeing your website.
 
