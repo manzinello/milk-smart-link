@@ -26,9 +26,9 @@ include_once('inc/os.php');
 include_once('inc/helper.php');
 include_once('inc/admin.php');
 
-add_action('wp', 'milk_redirect');
+add_action('wp', 'milk_init');
 
-function milk_redirect()
+function milk_init()
 {
 
     global $UNKNOWN, $IOS, $ANDROID;
@@ -40,10 +40,10 @@ function milk_redirect()
         switch ($os) {
 
             case $IOS:
-                _milk_redirect(get_option('milk_ios'), 301);
+                milk_redirect(get_option('milk_ios'), 301);
                 break;
             case $ANDROID:
-                _milk_redirect(get_option('milk_android'), 301);
+                milk_redirect(get_option('milk_android'), 301);
                 break;
             default:
                 break;
