@@ -23,6 +23,7 @@ function post_milk_settings()
 
         // ottengo i valori
         $id = sanitize_text_field($_POST['id']);
+
         $ios = esc_url($_POST['ios']);
         $android = esc_url($_POST['android']);
 
