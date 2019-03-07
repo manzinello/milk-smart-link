@@ -5,15 +5,15 @@ add_action('admin_enqueue_scripts', 'load_milk_style');
 
 function load_milk_style($hook)
 {
-    if ($hook != 'toplevel_page_milk-smartlink') {
+    if ($hook != 'toplevel_page_milk-smart-link') {
         return;
     }
-    wp_enqueue_style('bulma_css', site_url() . '/wp-content/plugins/milk-smartlink/css/bulma.min.css');
+    wp_enqueue_style('bulma_css', site_url() . '/wp-content/plugins/milk-smart-link/css/bulma.min.css');
 }
 
 function milk_settings()
 {
-    add_menu_page('Milk smart link', 'Milk smart link', 'manage_options', 'milk-smartlink', 'milk_settings_page', site_url() . '/wp-content/plugins/milk-smartlink/assets/milk-icon.png');
+    add_menu_page('Milk smart link', 'Milk smart link', 'manage_options', 'milk-smart-link', 'milk_settings_page', site_url() . '/wp-content/plugins/milk-smart-link/assets/milk-icon.png');
 }
 
 function post_milk_settings()
