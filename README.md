@@ -2,8 +2,8 @@
 
 # 🥛 Milk smart link for WordPress
 
-Milk smart link for WordPress
+https://wordpress.org/plugins/milk-smart-link/
 
 read also the [/readme.txt](/readme.txt)
 
-icon by freepik https://www.flaticon.com/authors/freepik
+(icon by freepik https://www.flaticon.com/authors/freepik)
