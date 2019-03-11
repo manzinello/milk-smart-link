@@ -64,20 +64,22 @@ function milk_settings_page()
     <section class="section">
         <div class="container">
 
-            <p class="title is-1">Milk</p>
-            <p>Milk is very simple to use. Choose a <strong>page</strong> and then add different <strong>url</strong> to
+            <p class="title is-1"><?php echo(__('Milk', 'milk-smart-link')) ?></p>
+            <p><?php echo(__("Milk is very simple to use. Choose a <strong>page</strong> and then add different <strong>url</strong> to
                 redirect to for Android or iOS.<br/>
                 For example, if you want to redirect a user to the correct app store based on his device to download
-                your app add the Play Store url under Android section and the App Store url for iOS.</p>
+                your app add the Play Store url under Android section and the App Store url for iOS.", "milk-smart-link")) ?></p>
             <br/>
-            <p>a plugin by <a target="_blank" href="https://matteomanzinello.com">matteo manzinello</a></p>
+            <p><?php echo(__('a plugin by', 'milk-smart-link')) ?> <a target="_blank"
+                                                                      href="https://matteomanzinello.com">matteo
+                    manzinello</a></p>
             <br/>
 
             <?php post_milk_settings(); ?>
 
             <form method="post" action="">
                 <div class="field">
-                    <label class="label">Page</label>
+                    <label class="label"><?php echo(__('Page', 'milk-smart-link')) ?></label>
                     <div class="control">
                         <div class="control">
                             <div class="select">
@@ -99,20 +101,21 @@ function milk_settings_page()
                     </div>
                 </div>
                 <div class="field">
-                    <label class="label">iOS</label>
+                    <label class="label"><?php echo(__('iOS', 'milk-smart-link')) ?></label>
                     <div class="control">
                         <input class="input" type="text" name="ios" value="<?php echo(get_option('milk_ios')) ?>">
                     </div>
                 </div>
                 <div class="field">
-                    <label class="label">Android</label>
+                    <label class="label"><?php echo(__('Android', 'milk-smart-link')) ?></label>
                     <div class="control">
                         <input class="input" type="text" name="android"
                                value="<?php echo(get_option('milk_android')) ?>">
                     </div>
                 </div>
                 <br/>
-                <button class="button is-primary" type="submit">Save settings</button>
+                <button class="button is-primary"
+                        type="submit"><?php echo(__('Save settings', 'milk-smart-link')) ?></button>
             </form>
         </div>
     </section>
