@@ -23,6 +23,13 @@ if (!defined('WPINC')) {
     die;
 }
 
+function milk_load_plugin_textdomain()
+{
+    load_plugin_textdomain('milk-smart-link', FALSE, basename(dirname(__FILE__)) . '/languages/');
+}
+
+add_action('plugins_loaded', 'milk_load_plugin_textdomain');
+
 include_once('inc/os.php');
 include_once('inc/helper.php');
 include_once('inc/admin.php');
