@@ -43,6 +43,9 @@ function post_milk_settings()
             update_option('milk_ios', $ios);
             update_option('milk_android', $android);
 
+            // mostro avviso success
+            echo('<article class="message is-success"><div class="message-body">' . __("Everything saved!", "milk-smart-link") . '</div></article>');
+
         }
 
     }
