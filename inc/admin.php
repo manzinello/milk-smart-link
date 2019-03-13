@@ -86,8 +86,16 @@ function milk_settings_page()
                                 <select name="id" id="id">
                                     <?php
 
+                                    $milk_id = get_option('milk_id');
+
+                                    if ($milk_id == "" || !isset($milk_id)) {
+                                        echo('<option selected value="">' . __('(none)', 'milk-smart-link') . '</option>');
+                                    } else {
+                                        echo('<option value="">' . __('(none)', 'milk-smart-link') . '</option>');
+                                    }
+
                                     foreach ($pages as $page) {
-                                        if ($page->ID == get_option('milk_id')) {
+                                        if ($page->ID == $milk_id) {
                                             echo('<option selected value="' . $page->ID . '">' . $page->post_title . '</option>');
                                         } else {
                                             echo('<option value="' . $page->ID . '">' . $page->post_title . '</option>');
