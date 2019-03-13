@@ -65,13 +65,13 @@ function milk_settings_page()
         <div class="container">
 
             <p class="title is-1"><?php echo(__('Milk', 'milk-smart-link')) ?></p>
-            <p><?php echo(__("Milk is very simple to use. Choose a <strong>page</strong> and then add different <strong>url</strong> to
+            <p class="subtitle is-6" style="padding-left: 0px;"><?php echo(__("Milk is very simple to use. Choose a <strong>page</strong> and then add different <strong>url</strong> to
                 redirect to for Android or iOS.<br/>
                 For example, if you want to redirect a user to the correct app store based on his device to download
                 your app add the Play Store url under Android section and the App Store url for iOS.", "milk-smart-link")) ?></p>
-            <br/>
-            <p><?php echo(__('a plugin by', 'milk-smart-link')) ?> <a target="_blank"
-                                                                      href="https://matteomanzinello.com">matteo
+            <p class="subtitle is-6" style="padding-left: 0px;"><?php echo(__('a plugin by', 'milk-smart-link')) ?> <a
+                        target="_blank"
+                        href="https://matteomanzinello.com">matteo
                     manzinello</a></p>
             <br/>
 
