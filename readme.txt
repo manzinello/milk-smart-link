@@ -4,7 +4,7 @@ Tags: android, google play, ios, app store, redirect, 301, landing page
 Requires at least: 4.8
 Tested up to: 5.1
 Requires PHP: 5.2.4
-Stable tag: 0.2.0
+Stable tag: 0.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,8 +35,11 @@ With Milk you can create a page that will redirect to a url if the user is visit
 
 == Changelog ==
 
-= 0.2 =
+= 0.2.1 =
+Bugfix, (none) value
+
+= 0.2.0 =
 Added success alert, bugfix
 
-= 0.1 =
+= 0.1.0 =
 Very first release of Milk smart link, iOS and Android available. WIP!
