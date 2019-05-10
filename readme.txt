@@ -2,9 +2,9 @@
 Contributors: manzinello
 Tags: android, google play, ios, app store, redirect, 301, landing page
 Requires at least: 4.8
-Tested up to: 5.1
+Tested up to: 5.2
 Requires PHP: 5.2.4
-Stable tag: 0.2.1
+Stable tag: 0.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,9 @@ With Milk you can create a page that will redirect to a url if the user is visit
 1. Milk settings page
 
 == Changelog ==
+
+= 0.3.0 =
+Added support to WordPress 5.2
 
 = 0.2.1 =
 Bugfix, (none) value
